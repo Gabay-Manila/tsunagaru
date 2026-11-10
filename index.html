@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3B6998">
+<title>つながる おたがいさまボード</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <h1>🌸 つながる おたがいさまボード</h1>
+  <div class="tools">
+    <label class="lang">母語 / Language
+      <select id="lang">
+        <option value="tl">Tagalog</option>
+        <option value="en">English</option>
+        <option value="vi">Tiếng Việt</option>
+      </select>
+    </label>
+    <button id="mute" class="mini" aria-pressed="false">🔊 おと</button>
+  </div>
+</header>
+<nav class="tabs" id="tabs" role="tablist"></nav>
+<main id="board" aria-live="polite"></main>
+
+<div id="overlay" class="overlay" hidden role="dialog" aria-modal="true">
+  <div class="big">
+    <div class="icon" id="oIcon"></div>
+    <div class="ja" id="oJa"></div>
+    <div class="native" id="oNative"></div>
+    <div class="actions">
+      <button id="oReplay" class="btn">🔁 もういちど</button>
+      <button id="oClose" class="btn alt">✕ とじる</button>
+    </div>
+  </div>
+</div>
+<script src="js/data.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

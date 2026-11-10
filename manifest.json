@@ -1,0 +1,12 @@
+{
+  "name": "つながる おたがいさまボード",
+  "short_name": "おたがいさま",
+  "description": "多文化共生・学級過負荷軽減PWA",
+  "lang": "ja",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#EFEAE0",
+  "theme_color": "#3B6998",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
